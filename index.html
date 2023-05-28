@@ -13,13 +13,31 @@
 
     <style>
      body {
-        background-color: #FDF1EC;
         font-family: 'DM Sans', sans-serif;
      }
      a {
-        color: #4F4F4F;
+        color: #FDF1EC;
         text-decoration: none;
      }
+     .bg-pop {
+      background-color: #EDFB9A;
+     }
+     .bg-sea {
+      background-color: #D7EFFE;
+     }
+     .bg-secondary {
+      background-color: #7D5260!important;
+     }
+     .rounded {
+      border-radius: 5rem!important;
+     }
+     .offset-md-1 {
+      margin-left: 3rem!important;
+     }
+     .boxes {
+      gap: 3rem!important;
+     }
+
     </style>
 
     
@@ -30,24 +48,24 @@
   </head>
   <body>
 
-    <main class="container pt-5 mt-5">
-
-        <div class="row">
-            <img src="assets/Play-app-icon.svg" alt="Play app icon" class="mx-auto d-block" style="width: 160px">
-        </div>  
-        <div class="row text-center my-5">
-            <h1>Make games. Play games.</h1>
-        </div> 
-        <div class="row">
-            <a href="https://apple.com/xyz"><img src="assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Apple store badge" class="mx-auto d-block" style="width: 160px"></a>
-        </div> 
-        
-        <div class="row pt-5 mt-5 text-center">
-                <p class="">
-                    <a href="mailto:contact@itsplay.app">Contact us</a>
-                </p>
-        </div>
-
+    <main class="px-5 py-5">
+        <div class="d-flex align-items-stretch flex-column flex-md-row gx-5 boxes">
+            <div class="flex-grow-1 flex-column bg-pop rounded py-5 px-5">
+                <img src="assets/Play-app-icon.svg" alt="Play app icon" class="d-block" style="width: 160px">
+                <h1 class="mt-5">Make games. Play games.</h1>
+                <h1 class="mb-5" style="color: #7a7a7a;">A new kind of social space.</h1>
+            </div>
+          </div>
+          <div class="d-flex mt-5 align-items-stretch flex-column flex-md-row gx-5 boxes">
+              <div class="justify-content-center ml-5 bg-sea flex-grow-1 rounded p-5 ">
+                <a class="align-self-center" href="https://apple.com/xyz"><img src="assets/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg" alt="Apple store badge" class="mx-auto d-block" style="height: 55px"></a>
+              </div>
+              <div class="justify-content-center ml-5 bg-secondary flex-grow-1 rounded p-5 align-items-center">
+                <a class="d-block text-center" href="mailto:contact@itsplay.app" style="height: 55px; line-height: 50px;">Contact us</a>
+              </div>
+              </div>
+          </div>
+      
     </main>
 
   </body>
